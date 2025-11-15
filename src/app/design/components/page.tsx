@@ -1,9 +1,10 @@
+import LightArea from "@/containers/LightArea";
+
 const ComponentsPage = () => {
   return (
-    <div>
-      <h2 className="text-2xl font-normal text-foreground mb-8">Components</h2>
+    <LightArea>
       <p className="text-sm text-claude-gray">Content coming soon...</p>
-    </div>
+    </LightArea>
   );
 };
 
