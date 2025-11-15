@@ -27,3 +27,10 @@ export interface ChatRoom {
   lastMessageAt: Date;
   activeUsers: number;
 }
+
+export type Color = {
+  variable: string;
+  name: string;
+  description: string;
+  value: string;
+};
