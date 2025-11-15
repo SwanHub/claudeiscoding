@@ -8,9 +8,9 @@ interface DesignLayoutProps {
 
 const DesignLayout = ({ children }: DesignLayoutProps) => {
   return (
-    <main className="min-h-screen max-w-7xl mx-auto border-black border px-6">
+    <main className="min-h-screen max-w-7xl mx-auto px-6">
       <header className="h-24 items-end flex">
-        <h1 className="text-3xl font-medium text-font-dark font-serif px-4">
+        <h1 className="text-3xl font-medium text-font-dark font-serif px-2">
           Design
         </h1>
       </header>
