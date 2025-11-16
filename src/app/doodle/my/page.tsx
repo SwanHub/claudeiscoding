@@ -7,7 +7,7 @@ import Tab from "@/elements/Tab";
 import CategoryTag from "@/elements/CategoryTag";
 import DoodleCard from "@/components/DoodleCard";
 
-const DoodlePage = () => {
+const MyDoodlesPage = () => {
   const pathname = usePathname();
   const [activeCategory, setActiveCategory] = useState("all");
 
@@ -19,13 +19,10 @@ const DoodlePage = () => {
     { id: "mixed", label: "Mixed media" },
   ];
 
-  const doodles = [
-    { id: 1, title: "Mountain Sketch", backgroundColor: "#d4e8d4" },
-    { id: 2, title: "Abstract Lines", backgroundColor: "#e8d4d4" },
-    { id: 3, title: "Urban Scene", backgroundColor: "#d4d4e8" },
-    { id: 4, title: "Nature Study", backgroundColor: "#e8e8d4" },
-    { id: 5, title: "Portrait Practice", backgroundColor: "#e8d4e8" },
-    { id: 6, title: "Still Life", backgroundColor: "#d4e8e8" },
+  const myDoodles = [
+    { id: 1, title: "My First Sketch", backgroundColor: "#ffd4d4" },
+    { id: 2, title: "Practice Session", backgroundColor: "#d4f4ff" },
+    { id: 3, title: "Daily Drawing", backgroundColor: "#fff4d4" },
   ];
 
   return (
@@ -67,7 +64,7 @@ const DoodlePage = () => {
 
       {/* Gallery Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {doodles.map((doodle) => (
+        {myDoodles.map((doodle) => (
           <DoodleCard
             key={doodle.id}
             title={doodle.title}
@@ -79,4 +76,4 @@ const DoodlePage = () => {
   );
 };
 
-export default DoodlePage;
+export default MyDoodlesPage;

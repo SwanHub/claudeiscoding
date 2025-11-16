@@ -44,10 +44,10 @@ export default function SiteNavLeft() {
           isNavOpen={isNavOpen}
         />
         <NavIcon
-          href="/doodle"
+          href="/doodles"
           icon={Paintbrush}
-          label="Doodle"
-          isActive={pathname === "/doodle"}
+          label="Doodles"
+          isActive={pathname === "/doodles"}
           isNavOpen={isNavOpen}
         />
       </div>

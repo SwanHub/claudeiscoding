@@ -43,13 +43,13 @@ const DoodlePage = () => {
       <div className="flex gap-6 mb-6 border-b border-border">
         <Tab
           label="Inspiration"
-          href="/doodle"
-          isActive={pathname === "/doodle"}
+          href="/doodles"
+          isActive={pathname === "/doodles"}
         />
         <Tab
           label="Your doodles"
-          href="/doodle/my"
-          isActive={pathname === "/doodle/my"}
+          href="/doodles/my"
+          isActive={pathname === "/doodles/my"}
         />
       </div>
 
