@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import Tab from "@/elements/Tab";
 import CategoryTag from "@/elements/CategoryTag";
 import DoodleCard from "@/components/DoodleCard";
-import PageHeader from "@/components/PageHeader";
 
 const DoodlePage = () => {
   const pathname = usePathname();
@@ -28,8 +27,6 @@ const DoodlePage = () => {
     { id: 6, title: "Still Life", backgroundColor: "#d4e8e8" },
   ];
 
-  // <div className="max-w-4xl mx-auto p-8">
-  //   <PageHeader title="Doodles" buttonText="New doodle" />
   return (
     <div>
       <div className="flex gap-6 mb-6 border-b border-border">
