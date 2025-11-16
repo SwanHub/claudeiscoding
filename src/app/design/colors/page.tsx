@@ -11,7 +11,7 @@ const ColorSwatch = ({
 }) => {
   return (
     <div
-      className={`flex gap-4 items-start ${
+      className={`flex gap-4 items-center ${
         showBorder ? "border-b border-border pb-4" : ""
       }`}
     >
@@ -20,7 +20,7 @@ const ColorSwatch = ({
         style={{ backgroundColor: color.value }}
       />
 
-      <div className="flex-1 pt-0.5">
+      <div className="flex-1">
         <div className="flex justify-between items-baseline mb-1">
           <h3 className="text-sm font-normal text-foreground">{color.name}</h3>
           <code className="text-xs font-mono text-claude-gray">
@@ -38,7 +38,7 @@ const ColorSwatch = ({
 const ColorsPage = () => {
   return (
     <LightArea>
-      <div className="flex flex-col gap-4">
+      <section className="flex flex-col gap-4">
         {COLORS.map((color, index) => (
           <ColorSwatch
             key={color.variable}
@@ -46,7 +46,7 @@ const ColorsPage = () => {
             showBorder={index !== COLORS.length - 1}
           />
         ))}
-      </div>
+      </section>
     </LightArea>
   );
 };

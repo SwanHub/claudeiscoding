@@ -2,11 +2,11 @@ import Link from "next/link";
 
 interface NavButtonProps {
   href: string;
-  isActive: boolean;
+  isActive?: boolean;
   label: string;
 }
 
-const NavButton = ({ href, isActive, label }: NavButtonProps) => {
+const NavButton = ({ href, isActive = false, label }: NavButtonProps) => {
   return (
     <Link
       key={href}
