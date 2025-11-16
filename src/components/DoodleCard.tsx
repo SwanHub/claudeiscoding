@@ -14,7 +14,8 @@ const DoodleCard = ({
   return (
     <div className="flex flex-col gap-3 cursor-pointer group">
       <div
-        className="aspect-[4/3] rounded-lg overflow-hidden transition-transform group-hover:scale-[1.02]"
+        className="aspect-video rounded-xl overflow-hidden border-[0.5px] border-transparent
+        transition-colors group-hover:border-border duration-200"
         style={{ backgroundColor }}
       >
         {thumbnail && (
