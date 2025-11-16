@@ -30,10 +30,14 @@ const NavIcon = ({
         w-full transition-colors ${statefulHighlightClass}`}
       onClick={onClick}
     >
-      <IconComponent size={16} strokeWidth={1.5} />
+      <span>
+        <IconComponent size={16} strokeWidth={1.5} />
+      </span>
       <span
-        className={`ml-3 text-xs text-foreground whitespace-nowrap ${
-          isNavOpen ? "block" : "hidden"
+        className={`ml-3 text-xs text-foreground whitespace-nowrap transition-all duration-100 ${
+          isNavOpen
+            ? "opacity-100 translate-x-0"
+            : "opacity-0 -translate-x-2 pointer-events-none w-0 overflow-hidden"
         }`}
       >
         {label}
