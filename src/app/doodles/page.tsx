@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { Plus } from "lucide-react";
 import Tab from "@/elements/Tab";
 import CategoryTag from "@/elements/CategoryTag";
 import DoodleCard from "@/components/DoodleCard";
+import PageHeader from "@/components/PageHeader";
 
 const DoodlePage = () => {
   const pathname = usePathname();
@@ -28,18 +28,10 @@ const DoodlePage = () => {
     { id: 6, title: "Still Life", backgroundColor: "#d4e8e8" },
   ];
 
+  // <div className="max-w-4xl mx-auto p-8">
+  //   <PageHeader title="Doodles" buttonText="New doodle" />
   return (
-    <div className="max-w-4xl mx-auto p-8">
-      {/* Header */}
-      <div className="flex items-center justify-between mb-8">
-        <h1 className="text-3xl font-serif text-foreground">Doodles</h1>
-        <button className="flex items-center gap-2 px-4 py-2 bg-foreground text-background rounded-lg hover:opacity-90 transition-opacity">
-          <Plus size={18} />
-          <span className="text-sm font-medium">New doodle</span>
-        </button>
-      </div>
-
-      {/* Tabs */}
+    <div>
       <div className="flex gap-6 mb-6 border-b border-border">
         <Tab
           label="Inspiration"
