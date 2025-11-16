@@ -1,15 +1,8 @@
+import BottomBorderArea from "@/containers/BottomBorderArea";
 import LightArea from "@/containers/LightArea";
 import NavButton from "@/elements/NavButton";
 import NavIcon from "@/elements/NavIcon";
-import { MessageSquare } from "lucide-react";
-
-const BottomBorderArea = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <span className="relative flex flex-col pb-4 mb-4 border-b-[0.5px] border-border">
-      {children}
-    </span>
-  );
-};
+import { MessagesSquare } from "lucide-react";
 
 const ElementsPage = () => {
   return (
@@ -29,7 +22,7 @@ const ElementsPage = () => {
             label="<NavButton />"
           />
         </BottomBorderArea>
-        <NavIcon icon={MessageSquare} label="<NavIcon MessageSquare />" />
+        <NavIcon icon={MessagesSquare} label="<NavIcon MessagesSquare />" />
       </section>
     </LightArea>
   );
