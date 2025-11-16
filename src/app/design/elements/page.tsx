@@ -5,7 +5,7 @@ const ElementsPage = () => {
   return (
     <LightArea>
       <section className="flex flex-col">
-        <span className="flex flex-col pb-4 mb-4 border-b border-border">
+        <span className="flex flex-col pb-4 mb-4 border-b-[0.5px] border-border">
           <NavButton
             href="/design/elements"
             isActive={true}

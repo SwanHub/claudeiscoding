@@ -12,11 +12,11 @@ const ColorSwatch = ({
   return (
     <div
       className={`flex gap-4 items-center ${
-        showBorder ? "border-b border-border pb-4" : ""
+        showBorder ? "border-b-[0.5px] border-border pb-4" : ""
       }`}
     >
       <div
-        className="w-16 h-16 flex-shrink-0 border-border border"
+        className="w-16 h-16 flex-shrink-0 border-border border-[0.5px]"
         style={{ backgroundColor: color.value }}
       />
 
