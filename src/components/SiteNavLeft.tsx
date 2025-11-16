@@ -4,7 +4,7 @@ import { MessageSquare, Users, Paintbrush } from "lucide-react";
 
 export default function SiteNavLeft() {
   return (
-    <aside className="w-12 border-r border-border flex flex-col items-center py-4 gap-1">
+    <aside className="fixed left-0 top-0 w-12 border-r-[0.5px] border-border flex flex-col items-center py-4 gap-1 h-screen bg-background">
       <CreateNewButton />
       <NavIcon icon={MessageSquare} label="Chat" />
       <NavIcon icon={Users} label="Community" />

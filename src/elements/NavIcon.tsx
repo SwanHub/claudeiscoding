@@ -9,7 +9,7 @@ const NavIcon = ({
   return (
     <div className="group relative flex items-center">
       <button
-        className="w-8 h-8 rounded-lg hover:bg-claude-beige flex items-center justify-center transition-colors cursor-pointer"
+        className="w-8 h-8 rounded-lg hover:bg-highlight-hover flex items-center justify-center transition-colors cursor-pointer"
         aria-label={label}
       >
         <IconComponent size={16} strokeWidth={2} />
